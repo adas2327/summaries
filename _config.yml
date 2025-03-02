@@ -2,3 +2,5 @@ title: "My Course Summaries"
 description: "A simple blog for course summaries"
 theme: jekyll-theme-minimal  # You can change the theme later
 show_excerpts: true
+plugins:
+  - jekyll-feed
