@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+
+  <!-- Load Jekyll Theme Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <style>
+    body {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    #header {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    #post-links {
+      padding: 10px;
+      background: #f8f8f8;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    #post-links ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    #post-links ul li {
+      display: inline;
+    }
+    #post-links ul li a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    #post-links ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  {% if page.use_math %}
+  <!-- MathJax Configuration -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" async
+    src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  {% endif %}
+</head>
+<body>
+
+  <!-- Website Title -->
+  <div id="header">
+    <h1>Just Summaries – No Filler</h1>
+    <p>Minimal words, maximum understanding.</p>
+    <a href="https://github.com/adas2327/summaries">View the Project on GitHub</a>
+  </div>
+
+  <!-- Blog Post Links Under Website Title -->
+  <div id="post-links">
+    <h3>📚 More Posts</h3>
+    <ul>
+      {% for post in site.posts %}
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div id="content">
+    {{ content }}
+  </div>
+
+</body>
+</html>
