@@ -4,5 +4,12 @@ theme: jekyll-theme-minimal
 baseurl: "/summaries"  # This ensures correct post URLs
 url: "https://adas2327.github.io"
 show_excerpts: true
+collections:
+  marketing:
+    output: true
+  finance:
+    output: true
+  operations:
+    output: true
 plugins:
   - jekyll-feed
