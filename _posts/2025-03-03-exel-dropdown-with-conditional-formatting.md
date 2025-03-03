@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Creating a Drop-Down Menu and Applying Conditional Formatting in Excel"
+date: 2025-03-03
+use_math: true
+---
+
 # Creating a Drop-Down Menu and Applying Conditional Formatting in Excel
 
 Excel is a powerful tool for organizing and analyzing data. One useful feature is the ability to create drop-down menus, which can make data entry more efficient and accurate. Additionally, you can apply conditional formatting to change the appearance of cells based on the selected value. In this blog post, we'll walk you through the steps to create a drop-down menu and apply conditional formatting.
