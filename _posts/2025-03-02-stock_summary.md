@@ -30,7 +30,7 @@ $$
 $$
 P_0 = \sum_{t=1}^{\infty} \frac{D_t}{(1 + r_e)^t}
 $$
-- If dividends grow at a constant rate \( g \), it simplifies to:
+- If dividends grow at a constant rate $$g$$, it simplifies to:
 $$
 P_0 = \frac{D_1}{r_e - g}
 $$
