@@ -14,6 +14,8 @@ defaults:
       path: "search.json.liquid"
       type: "pages"
     values:
-      permalink: "/search.json"
+      permalink: "/summaries/search.json"  # Ensure it follows the baseurl
+include:
+  - search.json.liquid  # Ensure it's included
 # Trigger rebuild
 
