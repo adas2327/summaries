@@ -2,24 +2,50 @@
 layout: default
 ---
 
-{% if page.use_math %}
-<script type="text/javascript">
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    }
-  };
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
 
-  // Load MathJax only after the page is fully loaded
-  document.addEventListener("DOMContentLoaded", function() {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
-    script.async = true;
-    document.head.appendChild(script);
-  });
-</script>
-{% endif %}
+  <!-- Load Jekyll Theme Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-{{ content }}
+  {% if page.use_math %}
+  <!-- MathJax Configuration -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script type="text/javascript" async
+    src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  {% endif %}
+</head>
+<body>
+  <div style="display: flex;">
+    <!-- Sidebar -->
+    <div style="width: 250px; padding: 20px; background: #f8f8f8; min-height: 100vh;">
+      <h2>📚 All Posts</h2>
+      <ul>
+        {% for post in site.posts %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <hr>
+      <a href="{{ '/' | relative_url }}">🏠 Back to Home</a>
+    </div>
+
+    <!-- Main Content -->
+    <div style="flex-grow: 1; padding: 20px;">
+      {{ content }}
+    </div>
+  </div>
+</body>
+</html>
