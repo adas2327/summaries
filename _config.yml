@@ -1,5 +1,5 @@
-title: "Only Summaries, zero garbage"
-description: "A simple blog for easy reading"
+title: "Just Summaries – No Filler"
+description: "Minimal words, maximum understanding."
 theme: jekyll-theme-minimal
 baseurl: "/summaries"  # This ensures correct post URLs
 url: "https://adas2327.github.io"
