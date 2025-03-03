@@ -11,7 +11,7 @@ kramdown:
   input: GFM
 defaults:
   - scope:
-      path: ""
+      path: "search.json.liquid"
       type: "pages"
     values:
       permalink: "/search.json"
