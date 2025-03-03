@@ -6,3 +6,5 @@ url: "https://adas2327.github.io"
 show_excerpts: true
 plugins:
   - jekyll-feed
+mathjax: true
+
