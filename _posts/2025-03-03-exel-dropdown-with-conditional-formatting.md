@@ -3,6 +3,7 @@ layout: post
 title: "Creating a Drop-Down Menu and Applying Conditional Formatting in Excel"
 date: 2025-03-03
 use_math: true
+tags: [excel, conditional formatting, dropdown, project management]
 ---
 
 # Creating a Drop-Down Menu and Applying Conditional Formatting in Excel
