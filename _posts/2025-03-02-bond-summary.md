@@ -20,7 +20,7 @@ For a **coupon bond**, the present value is calculated as:
 $$B_0 = \sum \frac{C}{(1+i)^t} + \frac{F}{(1+i)^N}$$
 
 where:
-- \( C \) = Coupon payment
+- $C$ = Coupon payment
 - \( i \) = Discount rate
 - \( F \) = Face value
 - \( N \) = Total number of periods
