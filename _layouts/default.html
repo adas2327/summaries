@@ -18,25 +18,38 @@
       flex-direction: row;
       gap: 20px;
     }
-    #content {
-      flex-grow: 2; /* Expands main content area */
-    }
-    #header {
-      background: #ffcc00; /* Yellow background for header */
+    #sidebar {
+      width: 250px;
+      background: #ffcc00; /* Yellow sidebar */
       padding: 15px;
-      font-size: 22px;
-      font-weight: bold;
-      text-align: left;
-      color: black;
       border-radius: 5px;
     }
-    #header p {
+    #header {
+      font-size: 22px;
+      font-weight: bold;
+      color: black;
+      margin-bottom: 10px;
+    }
+    #sidebar p {
       font-size: 16px;
       font-weight: normal;
-      margin: 5px 0 0;
+      margin-bottom: 15px;
+    }
+    #github-link {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      background: #00cc00; /* Green button */
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    #github-link:hover {
+      background: #009900;
     }
     #post-links {
-      width: 250px;
       background: #f8f8f8;
       padding: 10px;
       border-radius: 5px;
@@ -59,18 +72,8 @@
     #post-links ul li a:hover {
       text-decoration: underline;
     }
-    #github-footer {
-      margin-top: 20px;
-      font-size: 14px;
-      text-align: center;
-    }
-    #github-footer a {
-      color: #007bff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    #github-footer a:hover {
-      text-decoration: underline;
+    #content {
+      flex-grow: 2;
     }
   </style>
 
@@ -92,21 +95,18 @@
 </head>
 <body>
 
-  <!-- Website Title with Yellow Header -->
-  <div id="header">
-    Just Summaries – No Filler
+  <!-- Sidebar with Blog Title & GitHub Link -->
+  <div id="sidebar">
+    <div id="header">Just Summaries – No Filler</div>
     <p>Minimal words, maximum understanding.</p>
+
+    <!-- GitHub Link Moved to Sidebar -->
+    <a id="github-link" href="https://github.com/adas2327/summaries">View the Project on GitHub</a>
   </div>
 
   <!-- Main Content Area -->
   <div id="content">
-    <!-- Blog Content -->
     {{ content }}
-
-    <!-- Move GitHub Link to Bottom -->
-    <div id="github-footer">
-      <a href="https://github.com/adas2327/summaries">View the Project on GitHub</a>
-    </div>
   </div>
 
   <!-- Blog Post Links (Right Sidebar) -->
