@@ -9,6 +9,9 @@ plugins:
 markdown: kramdown
 kramdown:
   input: GFM
-include:
-  - search.json
+defaults:
+  - scope:
+      path: "search.json.liquid"
+    values:
+      permalink: "/search.json"
 # Trigger rebuild
