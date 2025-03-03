@@ -10,11 +10,16 @@ layout: default
       displayMath: [['$$', '$$'], ['\\[', '\\]']]
     }
   };
+
+  // Load MathJax only after the page is fully loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+    script.async = true;
+    document.head.appendChild(script);
+  });
 </script>
-<script type="text/javascript" async
-  src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {% endif %}
 
 {{ content }}
