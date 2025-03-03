@@ -6,9 +6,6 @@ url: "https://adas2327.github.io"
 show_excerpts: true
 plugins:
   - jekyll-feed
-# Use custom head.html file (ensures MathJax is loaded in every page)
-include:
-  - _includes/head.html
 markdown: kramdown
 kramdown:
   input: GFM
