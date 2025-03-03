@@ -17,9 +17,9 @@ use_math: true
 ## 3. Stock Valuation Models
 
 ### 3.1 One-Year Holding Model
-\[
+$$
 P_0 = \frac{D_1 + P_1}{1 + r_e}
-\]
+$$
 - **\(P_0\)**: Stock price today  
 - **\(D_1\)**: Expected dividend  
 - **\(P_1\)**: Expected price after one year  
