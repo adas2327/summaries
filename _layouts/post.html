@@ -12,6 +12,45 @@ layout: default
   <!-- Load Jekyll Theme Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
+  <style>
+    body {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    #post-title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    #sidebar {
+      text-align: center;
+      padding: 10px;
+      background: #f8f8f8;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    #sidebar h3 {
+      margin-bottom: 5px;
+    }
+    #sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #sidebar ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    #sidebar ul li a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    #sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
   {% if page.use_math %}
   <!-- MathJax Configuration -->
   <script type="text/javascript">
@@ -29,21 +68,24 @@ layout: default
   {% endif %}
 </head>
 <body>
-  <div style="display: flex;">
-    <!-- Left Sidebar with Blog Post Links -->
-    <aside style="width: 250px; padding: 20px; background: #f8f8f8; min-height: 100vh;">
-      <h3>📚 More Posts</h3>
-      <ul>
-        {% for post in site.posts %}
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </aside>
 
-    <!-- Main Content -->
-    <main style="flex-grow: 1; padding: 20px;">
-      {{ content }}
-    </main>
+  <!-- Blog Post Title -->
+  <h1 id="post-title">{{ page.title }}</h1>
+
+  <!-- Sidebar Under Title -->
+  <div id="sidebar">
+    <h3>📚 More Posts</h3>
+    <ul>
+      {% for post in site.posts %}
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
   </div>
+
+  <!-- Blog Content -->
+  <div id="content">
+    {{ content }}
+  </div>
+
 </body>
 </html>
