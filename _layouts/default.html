@@ -21,6 +21,20 @@
     #content {
       flex-grow: 2; /* Expands main content area */
     }
+    #header {
+      background: #ffcc00; /* Yellow background for header */
+      padding: 15px;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: left;
+      color: black;
+      border-radius: 5px;
+    }
+    #header p {
+      font-size: 16px;
+      font-weight: normal;
+      margin: 5px 0 0;
+    }
     #post-links {
       width: 250px;
       background: #f8f8f8;
@@ -45,6 +59,19 @@
     #post-links ul li a:hover {
       text-decoration: underline;
     }
+    #github-footer {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+    #github-footer a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #github-footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 
   {% if page.use_math %}
@@ -65,17 +92,21 @@
 </head>
 <body>
 
+  <!-- Website Title with Yellow Header -->
+  <div id="header">
+    Just Summaries – No Filler
+    <p>Minimal words, maximum understanding.</p>
+  </div>
+
   <!-- Main Content Area -->
   <div id="content">
-    <!-- Website Title -->
-    <div id="header">
-      <h1>Just Summaries – No Filler</h1>
-      <p>Minimal words, maximum understanding.</p>
-      <a href="https://github.com/adas2327/summaries">View the Project on GitHub</a>
-    </div>
-
     <!-- Blog Content -->
     {{ content }}
+
+    <!-- Move GitHub Link to Bottom -->
+    <div id="github-footer">
+      <a href="https://github.com/adas2327/summaries">View the Project on GitHub</a>
+    </div>
   </div>
 
   <!-- Blog Post Links (Right Sidebar) -->
