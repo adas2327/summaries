@@ -8,3 +8,6 @@ plugins:
   - jekyll-feed
 mathjax: true
 
+# Use custom head.html file (ensures MathJax is loaded in every page)
+include:
+  - _includes/head.html
