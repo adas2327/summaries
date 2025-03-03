@@ -2,90 +2,22 @@
 layout: default
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
+{% if page.use_math %}
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
+<script type="text/javascript" async
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endif %}
 
-  <!-- Load Jekyll Theme Styles -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-  <style>
-    body {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-    }
-    #post-title {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    #sidebar {
-      text-align: center;
-      padding: 10px;
-      background: #f8f8f8;
-      margin-bottom: 20px;
-      border-radius: 5px;
-    }
-    #sidebar h3 {
-      margin-bottom: 5px;
-    }
-    #sidebar ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    #sidebar ul li {
-      display: inline;
-      margin-right: 10px;
-    }
-    #sidebar ul li a {
-      text-decoration: none;
-      color: #007bff;
-    }
-    #sidebar ul li a:hover {
-      text-decoration: underline;
-    }
-  </style>
-
-  {% if page.use_math %}
-  <!-- MathJax Configuration -->
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']]
-      }
-    };
-  </script>
-  <script type="text/javascript" async
-    src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script type="text/javascript" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  {% endif %}
-</head>
-<body>
-
-  <!-- Blog Post Title -->
-  <h1 id="post-title">{{ page.title }}</h1>
-
-  <!-- Sidebar Under Title -->
-  <div id="sidebar">
-    <h3>📚 More Posts</h3>
-    <ul>
-      {% for post in site.posts %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <!-- Blog Content -->
-  <div id="content">
-    {{ content }}
-  </div>
-
-</body>
-</html>
+<!-- Post Content -->
+<main>
+  {{ content }}
+</main>
