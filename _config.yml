@@ -1,6 +1,8 @@
 title: "My Course Summaries"
 description: "A simple blog for course summaries"
-theme: jekyll-theme-minimal  # You can change the theme later
+theme: jekyll-theme-minimal
+baseurl: "/summaries"  # This ensures correct post URLs
+url: "https://adas2327.github.io"
 show_excerpts: true
 plugins:
   - jekyll-feed
