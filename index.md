@@ -1,15 +1,16 @@
 ---
 layout: default
-title: "Course Summaries"
+title: "Just Summaries – No Filler"
 ---
 
-# 📚 Course Summaries Blog  
+## 📚 Recent Posts
 
-## 📖 Recent Posts:
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts limit:5 %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
+
+[View all posts →](/)
+
+---
+## About
+Minimal words, maximum understanding.
