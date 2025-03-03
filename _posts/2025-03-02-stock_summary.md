@@ -2,6 +2,7 @@
 layout: post
 title: "Stock Valuation Summary"
 date: 2025-03-02
+use_math: true
 ---
 ## 1. Equity Securities
 - Stocks represent ownership in a company.
