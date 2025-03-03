@@ -4,6 +4,7 @@ title: "Stock Valuation Summary"
 date: 2025-03-02
 use_math: true
 ---
+## Stock Valuation Summary
 ## 1. Equity Securities
 - Stocks represent ownership in a company.
 - Shareholders have voting rights and may receive dividends (not fixed or guaranteed).
