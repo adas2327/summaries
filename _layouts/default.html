@@ -18,23 +18,38 @@
       flex-direction: row;
       gap: 20px;
     }
+    
+    /* Sidebar (Left) */
     #sidebar {
       width: 250px;
       background: #ffcc00; /* Yellow sidebar */
       padding: 15px;
       border-radius: 5px;
     }
+
     #header {
       font-size: 22px;
       font-weight: bold;
       color: black;
       margin-bottom: 10px;
     }
+
     #sidebar p {
       font-size: 16px;
       font-weight: normal;
       margin-bottom: 15px;
     }
+
+    /* Search Box */
+    #search-box {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    /* GitHub Link Button */
     #github-link {
       display: block;
       padding: 10px;
@@ -44,36 +59,65 @@
       font-weight: bold;
       text-decoration: none;
       border-radius: 5px;
-      margin-top: 20px;
+      margin-top: 10px;
     }
+
     #github-link:hover {
       background: #009900;
     }
-    #post-links {
-      background: #f8f8f8;
-      padding: 10px;
-      border-radius: 5px;
+
+    /* Content Area */
+    #content {
+      flex-grow: 2;
     }
+
+    /* Right Sidebar - More Posts */
+    #post-links {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 5px;
+      width: 250px;
+    }
+
     #post-links h3 {
       margin-bottom: 10px;
     }
+
     #post-links ul {
       list-style-type: none;
       padding: 0;
     }
+
     #post-links ul li {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #ddd; /* Separator line */
+      padding-bottom: 5px;
     }
-    #post-links ul li a {
+
+    #post-links ul li:last-child {
+      border-bottom: none;
+    }
+
+    #post-links a {
       text-decoration: none;
-      color: #007bff;
       font-weight: bold;
+      color: #007bff;
+      display: block;
+      padding: 5px 0;
     }
-    #post-links ul li a:hover {
+
+    #post-links a:hover {
       text-decoration: underline;
     }
-    #content {
-      flex-grow: 2;
+
+    /* "View All Posts" Button */
+    .view-all {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+      font-weight: bold;
+      color: #007bff;
     }
   </style>
 
@@ -104,15 +148,16 @@
 </head>
 <body>
 
-  <!-- Sidebar with Blog Title & GitHub Link -->
+  <!-- Sidebar (Left) -->
   <div id="sidebar">
     <div id="header">Just Summaries – No Filler</div>
     <p>Minimal words, maximum understanding.</p>
 
-  <input type="text" id="search-box" placeholder="Search posts..." style="width: 100%; padding: 5px;">
-  <ul id="search-results"></ul>
+    <!-- Search Box -->
+    <input type="text" id="search-box" placeholder="Search posts..." oninput="searchPosts()">
+    <ul id="search-results"></ul>
 
-    <!-- GitHub Link Moved to Sidebar -->
+    <!-- GitHub Link -->
     <a id="github-link" href="https://github.com/adas2327/summaries">View the Project on GitHub</a>
   </div>
 
@@ -121,17 +166,19 @@
     {{ content }}
   </div>
 
-  <!-- Blog Post Links (Right Sidebar) -->
+  <!-- More Posts (Right Sidebar) -->
   <div id="post-links">
     <h3>📚 More Posts</h3>
     <ul>
-      {% for post in site.posts %}
+      {% for post in site.posts limit:5 %}
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
+    <a href="/all-posts" class="view-all">View All Posts →</a>
   </div>
-  
-<script src="{{ site.baseurl }}/search.js"></script>
+
+  <!-- Search Script -->
+  <script src="{{ site.baseurl }}/search.js"></script>
 
 </body>
 </html>
