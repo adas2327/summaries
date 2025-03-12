@@ -1,105 +1,115 @@
 ---
 layout: post
-title: "Stock Valuation Summary"
-date: 2025-03-02
-use_math: true
+title: "Stocks and Diversification: Key Formulas and Concepts"
+date: 2025-03-12
+categories: finance investing
 ---
-## Stock Valuation Summary
-### 1. Equity Securities
-- Stocks represent ownership in a company.
-- Shareholders have voting rights and may receive dividends (not fixed or guaranteed).
-- Stocks are riskier than bonds due to their residual claim on earnings.
 
-### 2. Stock Transactions
-- **Buying (Long Position)**: Investors buy stocks expecting price appreciation.
-- **Selling**: Done for liquidity needs or to cut losses.
-- **Short Selling**: Borrowing shares, selling them, and buying back later at a lower price (high-risk strategy).
+## Chapter 1: Stocks
 
-### 3. Stock Valuation Models
+### Definition of Stocks
+A **stock** represents ownership in a company and gives the shareholder voting rights. Stocks provide returns through **dividends** and **capital appreciation**.
 
-#### 3.1 One-Year Holding Model
-$$
+### Stock Valuation Formulas
+
+#### **1. One-Year Valuation Formula**
+For an investor holding a stock for one year:
+\[
 P_0 = \frac{D_1 + P_1}{1 + r_e}
-$$
-- **$$P_0$$**: Stock price today  
-- **$$D_1$$**: Expected dividend  
-- **$$P_1$$**: Expected price after one year  
-- **$$r_e$$**: Expected return  
+\]
+where:
+- \( P_0 \) = current stock price
+- \( D_1 \) = expected dividend at year-end
+- \( P_1 \) = expected stock price at year-end
+- \( r_e \) = required rate of return
 
-#### 3.2 Dividend Discount Model (DDM)
-- Extending the one-year model:
-$$
+#### **2. Dividend Discount Model (DDM)**
+If an investor holds the stock indefinitely, the **infinite horizon DDM** applies:
+\[
 P_0 = \sum_{t=1}^{\infty} \frac{D_t}{(1 + r_e)^t}
-$$
-- If dividends grow at a constant rate $$g$$, it simplifies to:
-$$
+\]
+where \( D_t \) is the dividend expected at time \( t \).
+
+#### **3. Constant Growth Dividend Model (Gordon Growth Model)**
+If dividends grow at a constant rate \( g \):
+\[
 P_0 = \frac{D_1}{r_e - g}
-$$
-*(Gordon Growth Model)*
+\]
+where:
+- \( g \) = constant dividend growth rate
+- The formula is valid only if \( g < r_e \).
 
-### 4. Growth and Earnings Valuation
+**Example Calculation**:
+- A company pays a dividend of $3, grows dividends at 2%, and has a cost of equity of 6%.
+\[
+P_0 = \frac{3}{0.06 - 0.02} = 75
+\]
 
-#### 4.1 No-Growth Case
-If earnings remain constant and all are paid as dividends:
-$$
-P_0 = \frac{EPS_1}{r_e}
-$$
+#### **4. Stock Price and Earnings Relationship**
+\[
+P_0 = \frac{\text{EPS}_1}{r_e} + PV(\text{Growth Opportunities})
+\]
+where:
+- EPS = earnings per share
+- PV(Growth Opportunities) = Present value of future investment opportunities.
 
-#### 4.2 Growth Case
-$$
-P_0 = \frac{(1 - b) \cdot EPS_1}{r_e - (b \cdot r_{ROI})}
-$$
-- **$$ b $$** = Plowback ratio (retained earnings)  
-- **$$ r_{ROI} $$** = Return on new investments  
-- **Key Insight**: Stock value increases only if **$$ r_{ROI} > r_e $$** (profitable growth).  
+**Key Nuance**: A **higher P/E ratio** may indicate:
+- A low discount rate (\( r_e \))
+- High expected growth (\( g \))
+- A riskier stock with uncertain earnings.
 
-### 5. Alternative Valuation Methods for Non-Dividend Stocks
+### Important Considerations
+- Stocks are riskier than bonds because shareholders receive residual cash flows after debt holders.
+- **Short Selling**: Selling borrowed stock, requiring margin accounts and repayment of dividends.
+- **Stock Market Indices**: Measure performance (e.g., S&P 500, NASDAQ, Dow Jones).
 
-#### 5.1 Discounted Free Cash Flow (DCF) Model
-Used when companies do not pay dividends. Values a firm based on its free cash flows (FCF):
+---
 
-$$
-V_0 = \sum_{t=1}^{T} \frac{FCF_t}{(1 + r)^t} + \frac{V_T}{(1 + r)^T}
-$$
+## Chapter 2: Diversification
 
-- **Enterprise Value Calculation:**
-$$
-\text{Enterprise Value} = \sum \frac{FCF_t}{(1 + r)^t} + \frac{V_T}{(1 + r)^T}
-$$
+### Portfolio Return and Risk
 
-- **Market value of equity:**
-$$
-\text{Market value of equity} = \text{Enterprise value} + \text{Cash} - \text{Debt}
-$$
+#### **1. Expected Return of a Portfolio**
+\[
+E(R_p) = w_1 E(R_1) + w_2 E(R_2) + ... + w_n E(R_n)
+\]
+where \( w_i \) is the weight of asset \( i \).
 
-- **Stock price calculation:**
-$$
-P_0 = \frac{V_0 + \text{Cash} - \text{Debt}}{\text{Shares outstanding}}
-$$
+#### **2. Portfolio Variance**
+For a two-asset portfolio:
+\[
+\sigma_p^2 = w_1^2 \sigma_1^2 + w_2^2 \sigma_2^2 + 2w_1w_2 \rho_{12} \sigma_1 \sigma_2
+\]
+where:
+- \( \sigma_p^2 \) = variance of portfolio
+- \( \rho_{12} \) = correlation between assets.
 
-#### 5.2 Price-Earnings (P/E) Ratio Method
-$$
-P_0 = EPS_1 \times P/E
-$$
-- **Higher P/E**: Growth stock with expected future earnings increase.  
-- **Lower P/E**: Mature company with stable earnings.  
+#### **3. Minimum Variance Portfolio**
+When two assets are **perfectly negatively correlated** (\( \rho = -1 \)), it is possible to construct a **risk-free portfolio**.
 
-#### 5.3 Enterprise Value (EV) Multiples
-$$
-EV = \frac{FCF_1}{r - g}
-$$
-- Used when firms have different capital structures.
+\[
+w_1 = \frac{\sigma_2}{\sigma_1 + \sigma_2}, \quad w_2 = \frac{\sigma_1}{\sigma_1 + \sigma_2}
+\]
 
-### 6. Payout Methods: Dividends vs. Buybacks
-- **Dividends**: Paid to shareholders, stock price drops by the dividend amount.
-- **Share Buybacks**: Reduces shares outstanding, increasing per-share earnings.
+#### **4. Sharpe Ratio (Risk-Adjusted Return)**
+\[
+S = \frac{E(R_p) - R_f}{\sigma_p}
+\]
+where:
+- \( R_f \) = risk-free rate.
+- A higher **Sharpe Ratio** means a better risk-adjusted return.
 
-### 7. Summary of Valuation Approaches
+#### **5. Diversification Effect**
+- Adding assets with low or negative correlation reduces portfolio volatility.
+- **Key Observation**: As the number of assets increases, **idiosyncratic risk** (firm-specific risk) approaches zero, leaving only **systematic risk**.
 
-| **Method** | **Key Focus** | **Formula** |
-|------------|--------------|------------|
-| Dividend Discount Model | Future dividends | $$ P_0 = \frac{D_1}{r_e - g} $$ |
-| P/E Ratio Method | Market comparison | $$ P_0 = EPS \times P/E $$ |
-| Free Cash Flow Model | Total firm value (EV) | $$ EV = \sum \frac{FCF_t}{(1 + r)^t} $$ |
+---
 
-This document summarizes the key stock valuation models covered in the class notes.
+## Key Takeaways for Exams
+- **Memorize and practice the Gordon Growth Model**, as it is a common question type.
+- **Be cautious with stock growth assumptions**: if \( g > r_e \), the model breaks down.
+- **For portfolio risk problems**, always check correlation \( \rho \). If \( \rho = -1 \), a zero-risk portfolio is possible.
+- **If dividends are irregular**, use multi-stage models for stock valuation.
+- **Sharpe Ratio is crucial**: Always compare investments on a risk-adjusted basis.
+
+This summary captures the most essential **formulas and concepts** needed for problem sets and exams. Happy studying!
