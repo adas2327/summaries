@@ -2,6 +2,7 @@
 layout: post
 title: "Stocks and Diversification: Comprehensive Guide with Formulas"
 date: 2025-03-12
+use_math: true
 categories: finance investing
 ---
 
