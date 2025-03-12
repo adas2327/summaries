@@ -82,10 +82,14 @@
   <script type="text/javascript">
     window.MathJax = {
       tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']]
-      }
-    };
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    options: {
+      ignoreHtmlClass: "no-mathjax",
+      processHtmlClass: "mathjax"
+    }
+  };
   </script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
