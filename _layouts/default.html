@@ -66,6 +66,23 @@
       background: #009900;
     }
 
+    /* Home Button */
+    .home-button {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      background: #007bff; /* Blue button */
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .home-button:hover {
+      background: #0056b3;
+    }
+
     /* Content Area */
     #content {
       flex-grow: 2;
@@ -109,16 +126,6 @@
     #post-links a:hover {
       text-decoration: underline;
     }
-
-    /* "View All Posts" Button */
-    .view-all {
-      display: block;
-      margin-top: 10px;
-      font-size: 14px;
-      text-align: center;
-      font-weight: bold;
-      color: #007bff;
-    }
   </style>
 
   {% if page.use_math %}
@@ -159,6 +166,9 @@
 
     <!-- GitHub Link -->
     <a id="github-link" href="https://github.com/adas2327/summaries">View the Project on GitHub</a>
+
+    <!-- Home Button -->
+    <a href="{{ site.baseurl }}/" class="home-button">🏠 Home</a>
   </div>
 
   <!-- Main Content Area -->
@@ -174,8 +184,7 @@
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
-    <a href="{{ site.baseurl }}/all-posts" class="view-all">View All Posts →</a>
-</div>
+  </div>
 
   <!-- Search Script -->
   <script src="{{ site.baseurl }}/search.js"></script>
