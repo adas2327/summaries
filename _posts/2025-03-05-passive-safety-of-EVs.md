@@ -42,16 +42,6 @@ Tesla employs **structural safety monitoring** and **crash-triggered HV battery 
 - **FMVSS 305 (Electrical Shock Protection)**  
   Requires that post-crash electrical isolation of the HV battery must be at least **500 ohms/volt** to prevent electrocution. While not mandating front collision sensors, their use helps ensure compliance with this regulation by enabling faster isolation of the HV system. ([Cornell Law](https://www.law.cornell.edu/cfr/text/49/571.305))
 
-### **Industry Safety Comparisons**
-
-The following table summarizes international regulations related to occupant protection against physical injuries, including frontal impact safety standards:
-
-![International and National Regulations for Occupant Protection](file-RFEt4nCh15e9hit4PgZM68)
-
-Additionally, the following diagram from NHTSA illustrates the **high-voltage battery disconnection process** based on accident severity:
-
-![HV Battery Disconnection Process](file-R7ouaGWXcwyXW1PzaFQcT4)
-
 ### **Conclusion**
 
 Passive safety in BEV heavy-duty trucks heavily relies on **frontal collision detection and automatic HV battery isolation**. While not explicitly mandated by regulations, **industry best practices** include implementing crash sensors that trigger battery isolation mechanisms, significantly reducing the risk of electrical hazards. As technology evolves, these systems will become more sophisticated, further enhancing the safety of electric trucks.
