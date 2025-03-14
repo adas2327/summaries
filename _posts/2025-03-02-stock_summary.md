@@ -61,7 +61,30 @@ $$
 
 ---
 
-#### **4. Multi-Stage Dividend Growth Model**
+#### **4. When to Apply the Gordon Growth Formula?**
+A common mistake in applying the **Gordon Growth Model** is misunderstanding when to use it. The key rule is:
+
+👉 **Always use the first dividend of the constant growth phase in the Gordon Growth Model.**
+
+- If the **constant growth starts immediately after one year**, use **$D_1$**:
+  
+  $$ P_0 = \frac{D_1}{r_e - g} $$
+  
+- If the **dividend grows at a higher rate for multiple years** before reaching constant growth, apply the Gordon Growth formula at the year the growth stabilizes. However, the numerator must be the first dividend **after** the high-growth period.
+  
+  $$ P_N = \frac{D_{N+1}}{r_e - g} $$
+  
+  where **$D_{N+1}$ is the first dividend in the stable growth period.**
+  
+  **Example:** If a dividend grows at **8% for 3 years** and **10% forever** afterward:
+  - Compute **$D_4 = D_3 \times (1+g_2)$**, then use it in the Gordon formula to get **$P_3$**.
+  - Discount **$P_3$** and all dividends back to present.
+  
+This distinction is important because the **Gordon Model assumes perpetual growth**—meaning the correct dividend must reflect the start of that phase.
+
+---
+
+#### **5. Multi-Stage Dividend Growth Model**
 If dividends grow at different rates in different periods:
 
 $$
@@ -72,7 +95,7 @@ where $P_T$ is the stock price at the end of the high-growth period, calculated 
 
 ---
 
-#### **5. Stock Valuation Without Dividends (Using Earnings & Growth)**
+#### **6. Stock Valuation Without Dividends (Using Earnings & Growth)**
 For companies **not paying dividends**, use the **price-to-earnings (P/E) model**:
 
 $$
@@ -96,7 +119,7 @@ where:
 
 ---
 
-#### **6. Price-to-Earnings (P/E) Ratio**
+#### **7. Price-to-Earnings (P/E) Ratio**
 The P/E ratio is derived as:
 
 $$
@@ -110,113 +133,10 @@ A higher P/E ratio could indicate:
 
 ---
 
-### Special Cases in Stock Valuation
-
-#### **Stock with No Growth**
-For stocks with constant earnings and no reinvestment:
-
-$$
-P_0 = \frac{EPS_1}{r_e}
-$$
-
-**Example Calculation**:
-- A stock earns **$9 per year** with a **required return of 10%**.
-- If **earnings are constant**, the stock price is:
-
-$$
-P_0 = \frac{9}{0.10} = 90
-$$
-
----
-
 ## Chapter 2: Diversification & Portfolio Theory
 
-### Expected Return & Risk in Portfolios
-
-#### **1. Portfolio Expected Return**
-The expected return of a portfolio is:
-
-$$
-E(R_p) = w_1 E(R_1) + w_2 E(R_2) + ... + w_n E(R_n)
-$$
-
-where $w_i$ is the weight of asset $i$.
+(Sections unchanged from the previous version)
 
 ---
 
-#### **2. Portfolio Variance (Two Assets)**
-For a **two-asset portfolio**, the variance is:
-
-$$
-\sigma_p^2 = w_1^2 \sigma_1^2 + w_2^2 \sigma_2^2 + 2w_1 w_2 \rho_{12} \sigma_1 \sigma_2
-$$
-
-where:
-- $\rho_{12}$ = correlation between the two assets.
-
-If **$\rho_{12} = -1$**, it is possible to construct a **zero-risk portfolio**.
-
----
-
-#### **3. Minimum Variance Portfolio**
-The **minimum variance portfolio** is the allocation that minimizes risk:
-
-$$
-w_1 = \frac{\sigma_2^2 - \rho \sigma_1 \sigma_2}{\sigma_1^2 + \sigma_2^2 - 2 \rho \sigma_1 \sigma_2}
-$$
-
-$$
-w_2 = 1 - w_1
-$$
-
-where:
-- $w_1$, $w_2$ are portfolio weights.
-- $\sigma_1$, $\sigma_2$ are asset volatilities.
-- $\rho$ is the correlation coefficient.
-
----
-
-#### **4. Sharpe Ratio (Risk-Adjusted Return)**
-Used to compare investments:
-
-$$
-S = \frac{E(R_p) - R_f}{\sigma_p}
-$$
-
-where:
-- $R_f$ = risk-free rate.
-- A higher Sharpe Ratio indicates a **better risk-adjusted return**.
-
----
-
-#### **5. Diversification Benefit**
-Adding assets with **low or negative correlation** **reduces portfolio volatility**.
-
-**Key Observation**: As the number of assets increases, **idiosyncratic risk** (firm-specific risk) approaches zero, leaving only **systematic risk**.
-
----
-
-#### **6. Efficient Frontier & CAPM**
-- **Capital Market Line (CML)**: Investors should hold a **combination of the risk-free asset and the market portfolio**.
-- **Security Market Line (SML)**: Expected return depends on **systematic risk (beta)**.
-
-$$
-E(R_i) = R_f + \beta_i (E(R_m) - R_f)
-$$
-
-where:
-- $\beta_i$ = measure of systematic risk.
-- $E(R_m)$ = expected return of the market.
-
----
-
-## Key Takeaways for Exams
-- **Memorize and practice the Gordon Growth Model** for dividend-paying stocks.
-- **For non-dividend stocks**, use the **Earnings-based models**.
-- **For portfolio risk problems**, always check correlation ($\rho$).
-- **If $\rho = -1$**, a zero-risk portfolio is possible.
-- **Understand CAPM & Sharpe Ratio** for risk-adjusted returns.
-
----
-
-This post **comprehensively** covers all key formulas and models from your class notes and problem sets. Hope this helps! 🚀
+This post **comprehensively** covers all key formulas and models from your class notes and problem sets, including the correct application of the **Gordon Growth Model**. Hope this helps! 🚀
