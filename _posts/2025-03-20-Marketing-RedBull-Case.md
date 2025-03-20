@@ -37,6 +37,7 @@ Red Bull has built its **identity as an extreme, high-energy lifestyle brand**, 
 | **AlphaTauri (Fashion)** | Leverages Red Bull Racing’s audience, creates a premium tech-fashion appeal | Risk of confusing Red Bull’s brand identity with luxury fashion |
 
 ### **How These New Ventures Help and Hurt Red Bull**
+
 | **Expansion**  | **How It Helps Red Bull**                               | **How It Hurts Red Bull**                                      |
 |---------------|--------------------------------------------------|--------------------------------------------------|
 | **Organics**  | Reaches health-conscious consumers, diversifies revenue streams | May alienate core Red Bull fans who prefer the extreme sports brand |
