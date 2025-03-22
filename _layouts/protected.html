@@ -1,0 +1,20 @@
+<script>
+    function checkPassword() {
+        var password = prompt("Enter password:");
+        if (password === "jhalmuri") {
+            document.getElementById("protected-content").style.display = "block";
+            document.getElementById("password-form").style.display = "none";
+        } else {
+            alert("Incorrect password!");
+        }
+    }
+</script>
+
+<div id="password-form">
+    <p>This post is protected. Enter the password to view:</p>
+    <button onclick="checkPassword()">Enter Password</button>
+</div>
+
+<div id="protected-content" style="display: none;">
+    {{ content }}
+</div>
