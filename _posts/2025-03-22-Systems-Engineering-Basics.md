@@ -196,10 +196,4 @@ The **Formal Requirements Elicitation Tool (FRET)** is an open-source tool devel
 
 ---
 
-## Conclusion
-
-With my **unique blend of academic, industry, and business experience**, I am confident that I can drive success in this role and make a lasting impact on Duke’s Systems Engineering program. My vision is to bridge the gap between academia and industry, ensuring that students graduate with the skills and confidence to lead in top organizations.
-
----
-
 **Tags**: Systems Engineering, Duke University, Leadership, Academia, Industry, MBA, Career Development, Electromobility, AI, Model-Based Systems Engineering
