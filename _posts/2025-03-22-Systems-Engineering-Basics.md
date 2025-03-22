@@ -2,8 +2,6 @@
 layout: post
 title: "Duke Systems Engineering"
 date: 2023-10-25
-author: [Abhijit Das]
-categories: [Systems Engineering, Leadership, Academia, Industry]
 tags: [Duke University, MBA, Systems Engineering, Career Development, Electromobility, AI, Model-Based Systems Engineering]
 ---
 
