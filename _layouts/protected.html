@@ -1,5 +1,5 @@
 ---
-layout: post  <!-- Inherit the blog post layout -->
+layout: post  <!-- Ensures it follows the same blog post layout -->
 ---
 
 <script>
@@ -22,13 +22,15 @@ layout: post  <!-- Inherit the blog post layout -->
     }
 </script>
 
-<!-- Keep Password Form -->
+<!-- Password Form -->
 <div id="password-form" style="text-align: center; margin: 20px;">
     <p><strong>This post is protected. Enter the password to view:</strong></p>
     <button onclick="checkPassword()">Enter Password</button>
 </div>
 
-<!-- Blog Post Content Inside the Standard Layout -->
+<!-- Blog Post Content -->
 <div id="protected-content" style="display: none;">
+    <h1>{{ page.title }}</h1>
+    <p><strong>Published on:</strong> {{ page.date | date: "%B %d, %Y" }}</p>
     {{ content }}
 </div>
