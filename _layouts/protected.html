@@ -1,13 +1,25 @@
+---
+layout: post  <!-- Inherit the existing post layout -->
+---
+
 <script>
     function checkPassword() {
         var password = prompt("Enter password:");
-        if (password === "jhalmuri") {
+        if (password === "yourpassword") {  // Change this password
+            localStorage.setItem("access_granted_{{ page.slug }}", "true");
             document.getElementById("protected-content").style.display = "block";
             document.getElementById("password-form").style.display = "none";
         } else {
             alert("Incorrect password!");
         }
     }
+
+    window.onload = function() {
+        if (localStorage.getItem("access_granted_{{ page.slug }}") === "true") {
+            document.getElementById("protected-content").style.display = "block";
+            document.getElementById("password-form").style.display = "none";
+        }
+    };
 </script>
 
 <div id="password-form">
