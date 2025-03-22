@@ -1,11 +1,18 @@
 ---
-layout: default  <!-- Inherit the existing post layout -->
+layout: default  <!-- Ensure it inherits site-wide structure -->
 ---
 
 <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        if (localStorage.getItem("access_granted_{{ page.slug }}") === "true") {
+            document.getElementById("protected-content").style.display = "block";
+            document.getElementById("password-form").style.display = "none";
+        }
+    });
+
     function checkPassword() {
         var password = prompt("Enter password:");
-        if (password === "jhalmuri") {  // Change this password
+        if (password === "") {  // Change this password
             localStorage.setItem("access_granted_{{ page.slug }}", "true");
             document.getElementById("protected-content").style.display = "block";
             document.getElementById("password-form").style.display = "none";
@@ -13,20 +20,20 @@ layout: default  <!-- Inherit the existing post layout -->
             alert("Incorrect password!");
         }
     }
-
-    window.onload = function() {
-        if (localStorage.getItem("access_granted_{{ page.slug }}") === "true") {
-            document.getElementById("protected-content").style.display = "block";
-            document.getElementById("password-form").style.display = "none";
-        }
-    };
 </script>
 
-<div id="password-form">
-    <p>This post is protected. Enter the password to view:</p>
+<div id="password-form" style="text-align: center; margin: 20px;">
+    <p><strong>This post is protected. Enter the password to view:</strong></p>
     <button onclick="checkPassword()">Enter Password</button>
 </div>
 
 <div id="protected-content" style="display: none;">
-    {{ content }}
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+        </header>
+        <div class="post-content">
+            {{ content }}
+        </div>
+    </article>
 </div>
