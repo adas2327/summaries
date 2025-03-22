@@ -5,7 +5,7 @@ layout: post  <!-- Inherit the existing post layout -->
 <script>
     function checkPassword() {
         var password = prompt("Enter password:");
-        if (password === "yourpassword") {  // Change this password
+        if (password === "jhalmuri") {  // Change this password
             localStorage.setItem("access_granted_{{ page.slug }}", "true");
             document.getElementById("protected-content").style.display = "block";
             document.getElementById("password-form").style.display = "none";
