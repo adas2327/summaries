@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Executive Director Interview Preparation"
+title: "Duke Systems Engineering"
 date: 2025-03-22
 categories: [interview, duke, systems-engineering]
 ---
 
-# Why Should You Hire Me Over Someone with More Academic Experience?
+## Why Should You Hire Me Over Someone with More Academic Experience?
 
 I bring a **strong blend of industry experience and academic understanding**. Having led large-scale projects in **electromobility and safety**, I know what skills companies actually need from engineers today. My goal is to bridge the gap between academia and industry—ensuring Duke’s Systems Engineering graduates are not just well-versed in theory but prepared for **leadership roles in top organizations**. Combined with my Fuqua EMBA, I bring both a **business and technical perspective** that is uniquely suited for this role.
 
