@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Duke Systems Engineering"
-date: 2023-10-25
-tags: [Duke University, MBA, Systems Engineering, Career Development, Electromobility, AI, Model-Based Systems Engineering]
+title: "Executive Director Interview Preparation"
+date: 2025-03-22
+categories: [interview, duke, systems-engineering]
 ---
 
 # Why Should You Hire Me Over Someone with More Academic Experience?
