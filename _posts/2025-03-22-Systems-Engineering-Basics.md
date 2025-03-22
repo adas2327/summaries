@@ -1,11 +1,9 @@
----
 layout: protected
 title: "Executive Director Interview Preparation"
 date: 2025-03-22
 categories: [interview, duke, systems-engineering]
 tags: [Duke, Interview, Leadership]
 slug: executive-director-interview  # Unique identifier
----
 
 ## Preparing for the Executive Director - Systems Engineering Interview at Duke
 
