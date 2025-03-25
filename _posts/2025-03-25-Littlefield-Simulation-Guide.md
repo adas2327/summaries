@@ -1,6 +1,6 @@
 ---
-title: "Littlefield Lab Simulation - Step-by-Step Guide"
 layout: post
+title: "Littlefield Lab Simulation - Step-by-Step Guide"
 date: 2025-03-25
 use_math: true
 tags: [operations-management, simulation, inventory, scheduling, optimization]
