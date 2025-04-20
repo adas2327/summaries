@@ -1,1 +1,154 @@
+---
+title: "Lease vs Buy, EAA, and Capital Budgeting Explained"
+layout: post
+use_math: true
+date: 2025-04-19
+---
 
+This post summarizes key concepts from our capital budgeting and leasing lectures. It is structured for EMBA exam review and includes definitions, formulas, and logic behind financial decisions.
+
+---
+
+## 📌 Capital Budgeting vs. Capital Structure
+
+**Capital Budgeting**: How firms choose investment projects.
+- Tools: NPV, IRR, Payback, EAA
+
+**Capital Structure**: How firms finance projects (debt vs equity)
+- Tools: WACC, leverage ratios
+
+---
+
+## 💡 Key Definitions
+
+**EBITDA** = Earnings Before Interest, Taxes, Depreciation, and Amortization
+- Proxy for operating performance
+
+**Free Cash Flow (FCF)**:
+$$
+\text{FCF} = (\text{Revenues} - \text{Costs}) \cdot (1 - \tau_c) - \text{CapEx} - \Delta \text{NWC} + \tau_c \cdot \text{Depreciation}
+$$
+
+**Net Working Capital**:
+$$
+\text{NWC} = \text{Current Assets} - \text{Current Liabilities}
+$$
+
+**After-tax Salvage Value**:
+$$
+\text{After-tax salvage} = \text{Sale Price} - \tau_c \cdot (\text{Sale Price} - \text{Book Value})
+$$
+
+---
+
+## 📉 Present Value of Cash Flows
+
+From capital budgeting notes:
+$$
+\text{NPV} = -60,000 + 9,300 \cdot \frac{1 - (1 + 0.12)^{-8}}{0.12} + \frac{12,000}{(1.12)^8} = -8,954.35
+$$
+This includes:
+- An annuity from cost savings: \$9,300 for 8 years
+- A terminal value (salvage): \$12,000 in year 8
+
+---
+
+## ✅ Depreciation vs Lease Payment
+
+- **Depreciation** is non-cash; used for tax shield only
+- **Lease payment** is actual cash outflow
+
+**Tax Shield**:
+$$
+\text{Tax} = -c \cdot \tau_c
+$$
+
+**Example**:
+$$
+\text{Tax} = -1,375 \cdot 0.34 = -467.50
+$$
+
+---
+
+## 🆚 Lease vs Buy Framework
+
+### Buy Case:
+- Depreciation creates tax shield
+- After-tax cash flows:
+$$
+\text{Cash Flow} = \text{Cost Savings} - \text{Tax (on EBIT)}
+$$
+
+### Lease Case:
+- Lease payments are deductible
+- After-tax cash flows:
+$$
+\text{Cash Flow} = (\text{Cost Savings} - \text{Lease}) \cdot (1 - \tau_c)
+$$
+
+---
+
+## 💳 Present Value of Lease Payments
+
+From lecture:
+$$
+PV = 0.2 \cdot \frac{1 - (1 + 0.05)^{-10}}{0.05} = 1.5443
+$$
+Use cost of debt (5%) to discount fixed lease payments.
+
+---
+
+## 📊 Equivalent Annual Annuity (EAA)
+
+To compare unequal lives:
+$$
+a = PV \cdot \frac{i}{1 - (1 + i)^{-N}}
+$$
+
+**Example** (Machine A):
+$$
+a = 61.42 \cdot \frac{0.10}{1 - (1 + 0.10)^{-4}} = 19.376
+$$
+
+Interpretation: Investing \$61.42k yields \$19.38k/year for 4 years at 10%.
+
+---
+
+## 📐 Machine Comparison (NPV and EAA)
+
+### NPV
+$$
+NPV_A = -80 + \frac{50}{1.1} + \frac{50}{(1.1)^2} + \frac{50}{(1.1)^3} + \frac{25}{(1.1)^4} = 61.42
+$$
+
+$$
+NPV_B = -100 + \frac{60}{1.1} + \frac{60}{(1.1)^2} + \frac{60}{(1.1)^3} = 49.21
+$$
+
+### EAA
+$$
+a_A = 61.42 \cdot \frac{0.10}{1 - (1 + 0.10)^{-4}} = 19.376
+$$
+
+$$
+a_B = 49.21 \cdot \frac{0.10}{1 - (1 + 0.10)^{-3}} = 19.738
+$$
+
+Even though NPV(A) > NPV(B), EAA(B) > EAA(A), so B is better if the project is repeatable.
+
+---
+
+## 📚 Summary Table
+
+| Concept                     | Formula or Rule                                         |
+|----------------------------|----------------------------------------------------------|
+| Present Value of Annuity   | $\frac{1 - (1 + i)^{-N}}{i}$                             |
+| NPV                        | $\sum \frac{CF_t}{(1 + r)^t} - \text{Initial Cost}$     |
+| EAA                        | $PV \cdot \frac{i}{1 - (1 + i)^{-N}}$                   |
+| Lease vs Buy               | Compare PV of lease with cost of owning minus tax shield|
+| Depreciation Tax Shield    | $\tau_c \cdot \text{Depreciation}$                      |
+| After-tax Salvage          | $S - \tau_c (S - BV)$                                    |
+
+---
+
+Use this post as a cheat sheet before your final. Let me know if you'd like a downloadable version or a calculator in Excel!
