@@ -1,5 +1,6 @@
 ---
 title: "Marketing 795W – Final Exam Study Notes (All 12 Sessions)"
+layout: post
 use_math: true
 ---
 
