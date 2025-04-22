@@ -1,7 +1,9 @@
 ---
 title: "Marketing 795W – Final Exam Study Notes (All 12 Sessions)"
 layout: post
+date: 2025-04-21
 use_math: true
+categories: marketing
 ---
 
 
