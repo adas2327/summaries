@@ -14,7 +14,7 @@ We are two families (4 adults and 3 kids) traveling together to visit Grand Cany
 
 ## Day-by-Day Itinerary
 
-### Sept 3 (Tuesday): Travel Day + Drive to St. George
+### Sept 3 (Wednesday): Travel Day + Drive to St. George
 - Fly from Greensboro, NC to Las Vegas, NV (early morning flight if possible).
 - Pick up rental minivan at Las Vegas airport.
 - Drive about 1.5 hours to St. George, Utah.
@@ -24,7 +24,7 @@ We are two families (4 adults and 3 kids) traveling together to visit Grand Cany
 
 ---
 
-### Sept 4 (Wednesday): Zion National Park + Bryce Canyon
+### Sept 4 (Thursday): Zion National Park + Bryce Canyon
 - Early morning drive 45 minutes from St. George to Zion National Park.
 - Explore Zion: Riverside Walk, Emerald Pools, Canyon Overlook Trail.
 - Afternoon: Drive 1.5–2 hours to Bryce Canyon.
@@ -35,7 +35,7 @@ We are two families (4 adults and 3 kids) traveling together to visit Grand Cany
 
 ---
 
-### Sept 5 (Thursday): Lake Powell + Antelope Canyon
+### Sept 5 (Friday): Lake Powell + Antelope Canyon
 - Drive 2.5–3 hours to Page, AZ (Lake Powell area).
 - Visit Antelope Canyon (pre-booked guided tour).
 - Visit Horseshoe Bend.
@@ -46,7 +46,7 @@ We are two families (4 adults and 3 kids) traveling together to visit Grand Cany
 
 ---
 
-### Sept 6 (Friday): Grand Canyon National Park
+### Sept 6 (Saturday): Grand Canyon National Park
 - Drive 2.5 hours to Grand Canyon South Rim.
 - Explore Grand Canyon: Mather Point, Yavapai Point, Desert View Drive.
 - Sunset at Desert View Point or Hopi Point.
@@ -58,7 +58,7 @@ We are two families (4 adults and 3 kids) traveling together to visit Grand Cany
 
 ---
 
-### Sept 7 (Saturday): Sedona + Phoenix
+### Sept 7 (Sunday): Sedona + Phoenix
 - Drive 2 hours south to Sedona.
 - Short sightseeing in Sedona: Bell Rock, Cathedral Rock.
 - Continue 2-hour drive to Phoenix.
@@ -68,7 +68,7 @@ We are two families (4 adults and 3 kids) traveling together to visit Grand Cany
 
 ---
 
-### Sept 8 (Sunday): Return Home
+### Sept 8 (Monday): Return Home
 - Return rental car at Phoenix airport.
 - Fly from Phoenix back to Greensboro.
 
