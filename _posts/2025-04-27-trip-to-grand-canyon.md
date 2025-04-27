@@ -12,8 +12,7 @@ We are two families (4 adults and 3 kids) traveling together to visit Grand Cany
 
 ---
 
-<img src="/summaries/assets/images/travel_map.png" alt="Travel Map View" style="width:80%; margin: 20px auto; display:block;">
-
+<img src="{{ site.baseurl }}/assets/images/travel_map.png" alt="Travel Map View" style="width:80%; margin: 20px auto; display:block;">
 
 
 ---
