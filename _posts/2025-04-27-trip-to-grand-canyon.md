@@ -2,6 +2,8 @@
 title: "Grand Canyon, Lake Powell, Bryce Canyon Travel Itinerary (Sept 3-8)"
 date: 2025-04-27
 layout: post
+categories: travel, family
+tags: [travel, phoenix, las vegas, grand canyon, lake powell]
 ---
 
 ## Family Trip Plan: Phoenix to Las Vegas (Sept 3 to Sept 8)
