@@ -12,6 +12,11 @@ We are two families (4 adults and 3 kids) traveling together to visit Grand Cany
 
 ---
 
+<img src="/images/travel_map.png" alt="Travel Map View" style="width:80%; margin: 20px auto; display:block;">
+
+
+
+---
 ## Day-by-Day Itinerary
 
 ### Sept 3 (Wednesday): Travel Day + Drive to St. George
