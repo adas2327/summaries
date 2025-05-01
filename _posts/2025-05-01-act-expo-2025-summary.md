@@ -107,6 +107,29 @@ Fleets are increasingly exploring **RNG**, **biodiesel**, **propane**, and **ele
 
 ---
 
+## 🌍 Volvo’s Global Approach: “Partnership is the New Leadership”
+
+Volvo Trucks continues to act on its belief that **"partnership is the new leadership"**, aiming to accelerate sustainable transport through collaboration rather than competition.
+
+### 🇪🇺 Milence JV in Europe
+
+- In Europe, Volvo joined forces with **Daimler Truck** and **TRATON Group** to launch **Milence**, a joint venture to build a **public high-capacity truck charging network** across the EU.
+- Target: Over **1,700 charging points by 2027**, starting with sites in Germany, the Netherlands, France, and Scandinavia.
+- Stations will support **MCS** and be **open to all truck brands**, promoting interoperability.
+
+### 🌐 Seamless Charging Experience
+
+Volvo’s vision — through both Greenlane and Milence — is to provide fleet customers with a **seamless, integrated charging experience** across regions:
+
+- Real-time charger availability
+- Unified billing systems
+- Smart route and energy planning
+- Interoperable access across platforms
+
+By building on open infrastructure and partner ecosystems, Volvo aims to lead the transition toward **zero-emission freight** on a truly global scale.
+
+---
+
 ## 🧠 Final Thoughts
 
 ACT Expo 2025 made it clear: **clean transportation is no longer optional—it’s strategic**. Whether through megawatt charging, hydrogen breakthroughs, or renewable fuels, the path forward is diverse and dynamic. OEMs, fleets, and policymakers must work together to overcome infrastructure, policy, and cost barriers to truly unlock the zero-emissions future.
