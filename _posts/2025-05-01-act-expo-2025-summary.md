@@ -44,7 +44,7 @@ The **2025 Advanced Clean Transportation (ACT) Expo**, held in Anaheim, CA from 
 Tesla introduced a **1.2 MW charger** for its **Semi trucks**, with 46 dedicated charging sites coming online.
 
 - Based on what’s been shared publicly (including Wikipedia), this charger likely builds on Tesla’s **NACS standard**, possibly extended to higher power.
-- It is **not confirmed to follow the CharIN-led MCS (Megawatt Charging System)** standard, suggesting Tesla is pursuing a proprietary path for now.
+- It is **not confirmed to follow the CharIN-led Megawatt Charging System (MCS)** standard, suggesting Tesla is pursuing a proprietary path for now.
 
 This positions Tesla Semi charging as **vertically integrated**, while other OEMs like Volvo, Daimler, and PACCAR are leaning toward **open standards like MCS**.
 
@@ -85,11 +85,32 @@ Fleets are increasingly exploring **RNG**, **biodiesel**, **propane**, and **ele
 
 ---
 
+## 🛣️ Greenlane: Building the Backbone of Zero-Emission Freight
+
+**Greenlane Infrastructure, LLC** is a $675 million joint venture by **Daimler Truck North America**, **NextEra Energy Resources**, and **BlackRock**. Its goal is to develop a nationwide public charging and hydrogen refueling network for medium- and heavy-duty zero-emission vehicles.
+
+### 🤝 Strategic Partnerships
+
+- **Volvo Trucks North America**: In April 2025, Greenlane became Volvo’s first official **Charge Point Operator (CPO)**. Volvo customers now get real-time access to Greenlane sites via the **Volvo Open Charge** platform.
+- **Einride**: Not a direct JV partner, but running parallel infrastructure efforts with its **Einride Stations** for autonomous electric freight.
+
+### 📍 Infrastructure Rollout
+
+- **Colton, CA Site**: The first Greenlane flagship station will host over **60 chargers** for all commercial duty classes.
+- **I-15 Electric Corridor**: Spanning **280 miles** from Los Angeles to Las Vegas with sites in Colton, Barstow, and Baker spaced 60–90 miles apart.
+
+### ⚙️ Technology Focus
+
+- Designed for **Megawatt Charging System (MCS)** compatibility.
+- Integrated **fleet management, billing, and route planning tools**.
+- Publicly accessible, brand-agnostic charging — not limited to JV partner brands.
+
+---
+
 ## 🧠 Final Thoughts
 
 ACT Expo 2025 made it clear: **clean transportation is no longer optional—it’s strategic**. Whether through megawatt charging, hydrogen breakthroughs, or renewable fuels, the path forward is diverse and dynamic. OEMs, fleets, and policymakers must work together to overcome infrastructure, policy, and cost barriers to truly unlock the zero-emissions future.
 
 ---
 
-*Posted by [Your Name] · May 1, 2025*
-
+*Posted by Abhijit Das · May 1, 2025*
