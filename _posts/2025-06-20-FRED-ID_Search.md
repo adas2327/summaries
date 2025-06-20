@@ -51,7 +51,7 @@ Once opened:
 ## 3. Use Google Smart Search
 
 Just Google your term using this format:
-site:fred.stlouisfed.org [your search term]
+- `site:fred.stlouisfed.org [your search term]`
 
 yaml
 Copy
