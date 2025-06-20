@@ -51,4 +51,39 @@ Once opened:
 ## 3. Use Google Smart Search
 
 Just Google your term using this format:
+site:fred.stlouisfed.org [your search term]
 
+yaml
+Copy
+Edit
+
+**Examples:**
+- `site:fred.stlouisfed.org median sales price house series id`
+- `site:fred.stlouisfed.org employment level 16+`
+
+You’ll usually get a direct link to the FRED page with the series ID in the URL or page title.
+
+---
+
+## 4. Build Your Own Cheat Sheet (Highly Recommended for Exams)
+
+Make a small table with the most common series you'll use in macro or finance classes:
+
+| Variable                         | Series ID       | Description                                      |
+|----------------------------------|------------------|--------------------------------------------------|
+| Total Employment (16+)          | `LNS12000000`    | Employment Level: 16 years and over              |
+| Median Sales Price (Houses)     | `MSPUS`          | Median Sales Price of Houses Sold in the U.S.    |
+| CPI – All Urban Consumers       | `CPIAUCSL`       | Consumer Price Index (All Items)                 |
+| Core PCE                        | `PCEPILFE`       | PCE Excluding Food and Energy                    |
+| Real GDP (Chained 2017 $)       | `GDPC1`          | Real Gross Domestic Product                      |
+| Personal Consumption Expenditures | `PCEC96`        | Real Personal Consumption Expenditures           |
+
+Keep it printed, saved, or bookmarked.
+
+---
+
+## Final Thoughts
+
+Finding the right FRED series quickly is a skill that saves time and boosts your accuracy during projects and exams. Use one or more of these methods based on your comfort level.
+
+If you'd like, I can also generate a live cheat sheet page for your own use — just let me know!
