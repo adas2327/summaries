@@ -11,105 +11,140 @@ Monetary policy can seem complex at first — but once you break it down, the bi
 
 ## 💡 Key Concepts from Module 2
 
-### 1. Money & Fractional Banking
+### 1. 💵 Money, Deposits & Fractional Banking
 
-- **Monetary Base (MB)** = *Reserves + Physical Currency (held by public)*
-- **Money Supply (M1)** = *Physical Currency (held by public) + Demand Deposits*
-- **Fractional Reserve Banking**: Banks keep a portion of deposits as reserves and loan out the rest. This creates new money in the system.
-- **Money Multiplier**: 
-  \[
-  m = \frac{M1}{MB}
-  \]
-  A small increase in MB can lead to a much larger increase in M1 due to repeated lending and re-depositing.
+#### 🔹 Monetary Base (MB)
+\[
+\text{MB} = \text{Reserves} + \text{Physical Currency (held by public)}
+\]
+This is the total amount of "high-powered money" controlled by the central bank. It includes:
+- **Reserves**: Cash held by banks in vaults or on deposit at the central bank
+- **Physical Currency**: Cash and coins held by the public (not inside banks)
 
-### 2. Central Bank Tools & Implementation
+#### 🔹 Money Supply Measures
 
-- Central Banks (like the Fed) implement policy through:
-  - **Open Market Operations** (buy/sell securities)
+| Measure | What's Included |
+|---------|------------------|
+| **M1**  | 💵 Physical currency + 🏦 **Demand deposits** (checking accounts) |
+| **M2**  | 🪙 M1 + savings accounts + small time deposits (CDs under $100K) + retail money market funds |
+| **M3**  | 📊 M2 + large institutional deposits and less liquid instruments (no longer tracked by Fed) |
+
+#### 🔹 Demand Deposits vs. General Deposits
+
+- **Demand Deposits**:
+  - Funds in **checking accounts**
+  - Can be **withdrawn anytime**
+  - Used for **everyday spending**
+  - **✅ Counted in M1**
+
+- **Other Deposits** (e.g. savings, CDs):
+  - Not instantly spendable
+  - May have withdrawal limits or penalties
+  - **❌ Not in M1**, but included in **M2**
+
+> ✅ Only demand deposits are considered "money" in the strict M1 sense, because they’re liquid and usable immediately.
+
+#### 🔹 Fractional Reserve Banking
+Banks are only required to keep a fraction of deposits as reserves. The rest is loaned out, which increases the money supply.
+
+---
+
+### 2. 🏦 Central Bank Tools & Implementation
+
+- Central banks implement policy using:
+  - **Open Market Operations**
   - **Overnight Lending Rate** (e.g. Federal Funds Rate)
-  - **Discount Rate** (banks borrow directly from Fed)
-  - **Reserve Requirement** (least used)
-- When banks have more reserves, they lend more → interest rates drop → investment and spending rise.
+  - **Discount Rate**
+  - **Reserve Requirement** (rarely changed)
+- More reserves = more lending = lower interest rates = more investment and spending.
 
-### 3. AS/AD Curve Analysis
+---
 
-- **AD (Aggregate Demand)**: Slopes downward due to:
+### 3. 📉 AS/AD Curve Analysis
+
+- **Aggregate Demand (AD)** = C + I + G + (X – Im)
+- AD slopes down due to:
   - Wealth effect
   - Interest rate effect
   - Foreign exchange effect
-- **AS (Aggregate Supply)**: Slopes upward (short-run), shifts with changes in input costs, regulations, etc.
-- **Shocks**:
-  - Demand shocks move AD
-  - Supply shocks move AS
+- **Aggregate Supply (AS)** slopes upward (short run) and is affected by input costs, productivity, and regulations.
+- **Shocks** to AD or AS shift the curves and impact GDP and price level.
 
-### 4. The Dual Mandate
+---
 
-- The Fed has **two goals**:
-  - **Price stability**
-  - **Full employment**
-- Concepts:
-  - **NAIRU**: Lowest unemployment without triggering inflation
-  - **Potential GDP**: Max sustainable output
-  - **Stagflation**: When inflation and unemployment rise together
+### 4. 🎯 The Dual Mandate
 
-### 5. Taylor Rule
+The Federal Reserve is tasked with:
+- **Price Stability**
+- **Full Employment**
 
-A rule of thumb for setting interest rates:
+Key ideas:
+- **NAIRU** = Natural rate of unemployment (too low = inflation risk)
+- **Potential GDP** = Output at full resource utilization
+- **Output gap** = Actual – Potential GDP
+- **Stagflation** = Inflation + High unemployment (usually due to supply shocks)
+
+---
+
+### 5. 📊 The Taylor Rule
+
+Used to guide interest rate policy:
 \[
-\text{Target Fed Funds Rate} = 1.5 \times \text{Inflation Rate} + 0.5 \times \text{GDP Gap} + 1
+\text{Target Fed Funds Rate} = 1.5 \times \text{Inflation} + 0.5 \times \text{GDP Gap} + 1
 \]
-- “Hawks” weigh inflation more; “Doves” prioritize unemployment
-- The Fed often deviates from the rule but uses it for long-term guidance
 
-### 6. Central Bank Statements
+- "Inflation Hawks" prioritize inflation control (higher rates)
+- "Doves" prioritize employment (lower rates)
+- Taylor Rule suggests a balanced response to inflation and economic output
 
-- Fed language can be decoded into phases:
-  - *Business as Usual*, *Wait and See*, *Slow and Steady*, *Time to Act*, *All Systems Go*
-- Small rate changes (25 basis points) signal gradual adjustments; large ones mean urgency
+---
+
+### 6. 🗣️ Central Bank Statements
+
+Central bank language follows a pattern:
+- **Business as Usual**
+- **Wait and See**
+- **Slow and Steady**
+- **Time to Act**
+- **All Systems Go**
+
+Interpretation helps forecast rate decisions and economic direction.
 
 ---
 
 ## 🧠 Clarifications from Our Discussions
 
-- **M1 ≠ MB + Deposits**  
-  ✅ Correct: M1 = Demand Deposits + Physical Currency  
-  ❌ Reserves are **not** added again — they’re already part of the deposits
+- **M1 is NOT MB + deposits**
+  - ✅ M1 = Demand Deposits + Currency Held by Public
+  - ❌ Reserves are not added again — they support the deposits
 
-- **MB** includes:
-  - **Reserves (bank assets)**
-  - **Currency held by public**  
-  But **not** deposits.
+- **MB** includes reserves (bank-held) and physical currency (public-held), but not deposits directly
 
-- **Demand Deposits vs. Deposits**:  
-  - Only **checking accounts** (used for spending) count in M1.  
-  - Savings accounts, CDs, etc., are part of **M2**.
+- **Only demand deposits** are part of M1
+  - Savings, CDs → counted in **M2**
 
-- **Why M1, not MS?**  
-  - “M1” is part of a **monetary hierarchy**: M1, M2, M3…  
-  - MS (Money Supply) is a general term; M1 is a specific category.
+- **M1 vs M2 vs M3** help economists track how liquid the money is
 
 ---
 
 ## ✅ Example: MB and M1 in Action
 
 Suppose Customer A deposits $1,000:
-- Bank keeps **$100** as reserves (10% reserve ratio)
-- Loans out **$900**
-- That $900 is re-deposited elsewhere
+- Bank keeps $100 as reserves (10%)
+- Loans out $900 → redeposited
 
-### Result:
-- **MB** = $100 (reserves) + $0 (no public-held cash) = **$100**
-- **M1** = $1,000 (initial deposit) + $900 (from loan) = **$1,900**
+Then:
+- **MB = $100** (bank reserve only; public holds no currency)
+- **M1 = $1,900** (all in demand deposits)
 
-No double-counting: reserves are **not** added to M1 again.
+Reserves are **not** added again to M1 — no double-counting.
 
 ---
 
 ## ✍️ Final Thoughts
 
-Monetary policy isn't just for economists — it shapes our interest rates, job prospects, and even the value of our savings. By understanding the money multiplier, the role of central banks, and how tools like the Taylor Rule guide policy, we get a clearer view of how economies are steered in real life.
+Monetary policy isn’t just theory — it shapes interest rates, job markets, and inflation. By understanding tools like the money multiplier, AD/AS analysis, the Taylor Rule, and how the Fed speaks through its statements, we get a clear view of how economies are managed.
 
 ---
 
-*If you found this helpful or want to dive deeper into the next module, feel free to reach out or leave a comment below!*
-
+*Hope this helps others reviewing for the EMBA course or anyone trying to understand how central banks influence our daily financial reality.*
