@@ -14,9 +14,9 @@ Monetary policy can seem complex at first — but once you break it down, the bi
 ### 1. 💵 Money, Deposits & Fractional Banking
 
 #### 🔹 Monetary Base (MB)
-\[
+$$
 \text{MB} = \text{Reserves} + \text{Physical Currency (held by public)}
-\]
+$$
 This is the total amount of "high-powered money" controlled by the central bank. It includes:
 - **Reserves**: Cash held by banks in vaults or on deposit at the central bank
 - **Physical Currency**: Cash and coins held by the public (not inside banks)
@@ -89,9 +89,9 @@ Key ideas:
 ### 5. 📊 The Taylor Rule
 
 Used to guide interest rate policy:
-\[
+$$
 \text{Target Fed Funds Rate} = 1.5 \times \text{Inflation} + 0.5 \times \text{GDP Gap} + 1
-\]
+$$
 
 - "Inflation Hawks" prioritize inflation control (higher rates)
 - "Doves" prioritize employment (lower rates)
