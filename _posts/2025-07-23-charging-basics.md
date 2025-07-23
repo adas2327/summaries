@@ -1,11 +1,11 @@
 ---
-title: "EV Charging Interoperability Prep"
+title: "EV Charging Basics"
 layout: post
 date: 2025-07-23
 categories: [EV, Charging, Interoperability]
 ---
 
-# EV Charging Technical Prep for Interview
+# EV Charging Basics
 
 This page is for me to rehearse key concepts, protocols, and test areas before my interview.
 
@@ -93,10 +93,8 @@ Relevancy:
 
 ---
 
-## 8. Personal Talking Points
-- Co-chair for Heavy-Duty Charging Interoperability (Volvo).
-- Extensive full-vehicle system validation experience.
-- Ability to translate complex test findings into actionable results.
+## 8. Summary
+- .
 
 ---
 
