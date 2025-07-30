@@ -23,40 +23,40 @@ math: true
 
 | **Risk**               | **Condition**                                             | **Basel III Rule**                                               |
 |------------------------|-----------------------------------------------------------|------------------------------------------------------------------|
-| Capital Inadequacy     | Asset values fall → not enough Equity to cover losses     | $$\\frac{Equity}{Long\\text{-}Term\\ Assets} \\geq 8\\%$$         |
-| Liquidity Risk         | Liquid assets < Depositor Withdrawals                     | $$Currency + Reserves + Treasuries + STA > 5\\% \\times Deposits$$ |
+| Capital Inadequacy     | Asset values fall **→** not enough Equity to cover losses     | $$\\frac{Equity}{Long\\text{-}Term\\ Assets} \\geq 8\\%$$         |
+| Liquidity Risk         | Liquid assets **<** Depositor Withdrawals                     | $$Currency + Reserves + Treasuries + STA > 5\\% \\times Deposits$$ |
 | Stable Funding Risk    | Long-term assets funded by short-term liabilities         | $$Deposits + LT\\ Liabilities + Equity > LT\\ Assets$$             |
 
 ## 🔁 SECTION 2: HOW BANKS FAIL – SIGNAL FLOW
 
 **Capital Inadequacy Risk**
 
-↓ Long-Term Asset Value  
-→ ↓ Total Asset Value  
-→ If Equity < Losses  
-→ Bank becomes insolvent  
+**↓** Long-Term Asset Value  
+**→** **↓** Total Asset Value  
+**→** If Equity **<** Losses  
+**→** Bank becomes insolvent  
 
 **Liquidity Risk**
 
-↑ Withdrawals  
-→ Need for Liquid Assets  
-→ If Cash/Treasuries < Withdrawals  
-→ Forced Sale of LT Assets → Fire Sale → ↓ Asset Prices  
+**↑** Withdrawals  
+**→** Need for Liquid Assets  
+**→** If Cash/Treasuries **<** Withdrawals  
+**→** Forced Sale of LT Assets **→** Fire Sale **→** **↓** Asset Prices  
 
 **Stable Funding Risk**
 
-↑ Short-Term Borrowing  
-→ Can’t Refinance in Crisis  
-→ Insolvency or default risk ↑  
+**↑** Short-Term Borrowing  
+**→** Can’t Refinance in Crisis  
+**→** Insolvency or default risk **↑**  
 
 ## 💥 SECTION 3: CONTAGION MECHANISMS
 
 | **Contagion Channel**        | **Trigger**                                       | **Impact**                            |
 |-----------------------------|---------------------------------------------------|----------------------------------------|
-| Loan Default                | Bank A cannot repay interbank loan from Bank B    | Bank B takes a loss → ↓ Capital        |
-| Fire Sale                   | One bank sells LT Assets                          | Market value ↓ → Other banks mark down |
+| Loan Default                | Bank A cannot repay interbank loan from Bank B    | Bank B takes a loss **→** **↓** Capital        |
+| Fire Sale                   | One bank sells LT Assets                          | Market value **↓** **→** Other banks mark down |
 | Wholesale Lending Freeze    | Interbank market dries up                         | Borrowing banks fail to refinance      |
-| CDS Insurer Failure         | Insurer (e.g., AIG) collapses                     | Banks lose insurance → Exposure ↑      |
+| CDS Insurer Failure         | Insurer (e.g., AIG) collapses                     | Banks lose insurance **→** Exposure **↑**      |
 
 ## 💼 SECTION 4: FED BALANCE SHEET OPERATIONS
 
@@ -64,15 +64,15 @@ math: true
 
 | **Tool**           | **Effect on Fed Balance Sheet**         | **Purpose**                           |
 |--------------------|------------------------------------------|----------------------------------------|
-| Repo (Fed Buys)    | ↑ Assets (Repo), ↑ Reserves (Liability)  | Inject liquidity, lower FFR            |
-| Reverse Repo (Sell)| ↓ Assets (RRP), ↓ Reserves               | Remove liquidity, raise FFR            |
+| Repo (Fed Buys)    | **↑** Assets (Repo), **↑** Reserves (Liability)  | Inject liquidity, lower FFR            |
+| Reverse Repo (Sell)| **↓** Assets (RRP), **↓** Reserves               | Remove liquidity, raise FFR            |
 
 ### 4.2 Quantitative Easing (QE)
 
-QE → Fed buys risky or long-term assets  
-→ ↑ Bank Reserves  
-→ ↑ Liquidity  
-→ ↓ Long-Term Yields  
+QE **→** Fed buys risky or long-term assets  
+**→** **↑** Bank Reserves  
+**→** **↑** Liquidity  
+**→** **↓** Long-Term Yields  
 
 **Used when:**  
 - Fed Funds Rate = Floor (IORB)  
@@ -92,40 +92,32 @@ QE → Fed buys risky or long-term assets
 
 Corridor:  
 Discount Rate (Ceiling)  
-↓  
+**↓**  
 Fed Funds Rate  
-↓  
+**↓**  
 IORB Rate (Floor)  
 
 Floor:  
-FFR ≈ IORB ≈ ON RRP  
+FFR **≈** IORB **≈** ON RRP  
 
 ## 🔓 SECTION 6: POLICY EFFECTS ON BALANCE SHEET
 
-- OMO Purchase (Treasuries) → ↑ Reserves → ↓ FFR  
-- ↑ Discount Rate → ↑ Ceiling → ↑ FFR  
-- ↑ Required Reserve Ratio → ↑ Demand for Reserves → ↑ FFR  
-- ↑ IORB → ↑ Floor → ↑ FFR (in floor regime)  
+- OMO Purchase (Treasuries) **→** **↑** Reserves **→** **↓** FFR  
+- **↑** Discount Rate **→** **↑** Ceiling **→** **↑** FFR  
+- **↑** Required Reserve Ratio **→** **↑** Demand for Reserves **→** **↑** FFR  
+- **↑** IORB **→** **↑** Floor **→** **↑** FFR (in floor regime)  
 
-## 🔍 SECTION 7: THE 2008 CRISIS – ROOT CAUSES
+## 🔍 SECTION 7: THE 2008 CRISIS – ROOT CAUSES (TABLE FORMAT)
 
-### 7.1 ABS Risk Transfer
-
-Loan → Securitized → Sold to Investors  
-→ Lenders have no skin in the game  
-→ ↓ Underwriting standards  
-→ ↑ Subprime exposure  
-→ Crisis when default wave begins  
-
-### 7.2 ARM Bubble → Collapse
-
-Housing Bubble ↑  
-→ More ARMs + Subprime Loans  
-→ Bubble Bursts → ↓ Home Prices  
-→ Can’t Refinance  
-→ ARM Reset → ↑ Payments  
-→ ↑ Defaults & Foreclosures  
-→ ABS Price ↓ → Bank Losses ↑  
+| **Event**                    | **Effect**                             | **Reasoning**                            |
+|-----------------------------|----------------------------------------|-------------------------------------------|
+| Housing Bubble **↑**         | More ARMs and subprime loans issued    | Lenders believed home prices would keep rising |
+| Bubble bursts               | Home prices **↓**                       | Supply of homes **↑**, demand **↓**         |
+| Home prices **↓**            | Borrowers can’t refinance              | Loans exceed new home values (underwater) |
+| ARM resets                  | Payments **↑**                         | Low initial rates expired                  |
+| Payments **↑**               | Defaults and foreclosures **↑**        | Borrowers can’t afford new monthly cost    |
+| Defaults **↑**               | ABS prices **↓**                       | Investors panic, try to sell               |
+| ABS prices **↓**             | Bank losses **↑**                      | ABS held as bank assets lose value         |
 
 ## 🧷 SECTION 8: BASEL III – REGULATORY FIXES
 
@@ -147,8 +139,8 @@ Housing Bubble ↑
    $$Deposits + LT\\ Liabilities + Equity > LT\\ Assets$$
 
 4. **Money Supply & Fed Funds Rate**  
-   - In corridor system: ↑ Money Supply → ↓ FFR  
-   - In floor system: ↑ Money Supply → no change in FFR (unless IORB adjusted)  
+   - In corridor system: **↑** Money Supply **→** **↓** FFR  
+   - In floor system: **↑** Money Supply **→** no change in FFR (unless IORB adjusted)  
 
 5. **Repo Impact**  
-   - Repo ↑ → Fed Lending ↑ → Bank Reserves ↑ → FFR ↓  
+   - Repo **↑** **→** Fed Lending **↑** **→** Bank Reserves **↑** **→** FFR **↓**  
