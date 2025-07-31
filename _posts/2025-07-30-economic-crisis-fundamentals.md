@@ -27,6 +27,13 @@ use_math: true
 | Liquidity Risk         | Liquid assets **<** Depositor Withdrawals                     | $$Currency + Reserves + Treasuries + STA > 5\\% \\times Deposits$$ |
 | Stable Funding Risk    | Long-term assets funded by short-term liabilities         | $$Deposits + LT\\ Liabilities + Equity > LT\\ Assets$$             |
 
+### 🔍 Liquid Assets vs Stable Funding
+
+| **Term**           | **Meaning**                                | **Examples**                         |
+|--------------------|---------------------------------------------|--------------------------------------|
+| **Liquid Assets**  | Assets that can be sold or accessed quickly | Cash, Reserves, U.S. Treasuries      |
+| **Stable Funding** | Liabilities that are unlikely to disappear suddenly | Deposits, Long-Term Liabilities, Equity |
+
 ## 🔁 SECTION 2: HOW BANKS FAIL – SIGNAL FLOW
 
 **Capital Inadequacy Risk**
