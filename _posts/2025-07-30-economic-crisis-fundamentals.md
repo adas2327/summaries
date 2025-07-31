@@ -2,7 +2,7 @@
 title: "2008 Financial Crisis – Study Guide"
 date: 2025-07-29
 categories: [gmi, module4, crisis]
-math: true
+use_math: true
 ---
 
 # 📘 Module 4 Study Guide – The 2008 Financial Crisis
