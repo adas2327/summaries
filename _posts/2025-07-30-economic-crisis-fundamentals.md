@@ -150,4 +150,98 @@ FFR **≈** IORB **≈** ON RRP
    - In floor system: **↑** Money Supply **→** no change in FFR (unless IORB adjusted)  
 
 5. **Repo Impact**  
-   - Repo **↑** **→** Fed Lending **↑** **→** Bank Reserves **↑** **→** FFR **↓**  
+   - Repo **↑** **→** Fed Lending **↑** **→** Bank Reserves **↑** **→** FFR **↓**
+  
+   # 🧠 Master Logic Map: Fed & Bank Balance Sheets, QE/QT, and Crisis Dynamics
+
+---
+
+## 🏦 1. The Federal Reserve’s Balance Sheet
+
+| **Category**            | **Type**     | **Examples**                                      |
+|------------------------|--------------|---------------------------------------------------|
+| **Assets**             | Asset        | U.S. Treasuries, ABS/MBS, Repos (loans to banks)  |
+| **Liabilities**        | Liability    | Currency in circulation, Bank Reserves, RRPs      |
+
+---
+
+## 🏢 2. Commercial Bank Balance Sheet
+
+| **Category**            | **Type**     | **Examples**                                      |
+|------------------------|--------------|---------------------------------------------------|
+| **Assets**             | Asset        | Reserves at Fed, Loans to public, Treasuries, ABS |
+| **Liabilities**        | Liability    | Deposits, Short-term debt, Loans from Fed         |
+| **Equity**             | Capital      | Shareholder equity                                |
+
+---
+
+## 🔄 3. How Fed Actions Impact Bank Balance Sheets
+
+| **Fed Action**           | **Fed Asset** ↑ | **Fed Liability** ↑ | **Bank Asset** ↑            | **Bank Liability/Effect**         |
+|--------------------------|------------------|----------------------|------------------------------|-----------------------------------|
+| QE (buy Treasuries)      | Treasuries       | Reserves             | Reserves                     | ↑ Lending capacity                |
+| QE (buy ABS)             | ABS              | Reserves             | Reserves                     | ↓ Risk on bank balance sheet      |
+| Repo (loan to bank)      | Repos            | Reserves             | Reserves                     | ↑ Short-term funding              |
+| RRP (borrow from bank)   | Treasuries ↓     | RRPs                 | Reserves ↓                   | ↓ Liquidity                       |
+| QT (sell assets)         | Treasuries ↓     | Reserves ↓           | Reserves ↓                   | ↓ Lending, ↑ interest rates       |
+
+---
+
+## 📉 4. Corridor vs. Floor System
+
+| Feature                | **Corridor**                            | **Floor**                                |
+|------------------------|------------------------------------------|-------------------------------------------|
+| Reserve Level         | Scarce                                  | Ample (due to QE)                        |
+| Control Mechanism     | Adjust reserve supply (OMOs)            | Set IORB to guide rate                   |
+| FFR Location          | Between discount rate & IORB            | At or just above IORB                    |
+| Used When             | Pre-2008, normal times                  | Post-2008, QE/QE periods                 |
+
+---
+
+## 📈 5. Cause-and-Effect Table
+
+| **Event**                                   | **Direct Effect**                        | **Resulting Impact**                            |
+|---------------------------------------------|-------------------------------------------|--------------------------------------------------|
+| Fed buys Treasuries (QE)                    | ↑ Bank reserves                           | FFR ↓, lending ↑                                 |
+| Fed buys ABS                                | ↓ Risky assets on bank balance sheets     | Lending to private sector ↑                      |
+| Repo (Fed → bank)                           | ↑ Bank reserves (loan to bank)            | Short-term liquidity ↑                           |
+| RRP (bank → Fed)                            | ↓ Bank reserves                           | FFR ↑, liquidity ↓                               |
+| Bank loses deposit funding                  | ↑ Reliance on wholesale funding           | Liquidity & stable funding risk ↑                |
+| Bank loses asset value                      | ↓ Equity                                   | Capital inadequacy risk ↑                        |
+| More reserves in system                     | FFR sticks to floor                       | Corridor mechanism ineffective                   |
+| Bank exposed to failed counterparty         | ↓ Asset (loan), maybe no liability offset | Capital risk, liquidity risk                     |
+| QE in floor regime                          | No effect on FFR                          | Works through credit easing (long-term lending)  |
+
+---
+
+## 💣 6. During Crisis — What's Happening?
+
+| **Crisis Trigger**                    | **Fed Response**       | **Balance Sheet Outcome**                                  |
+|--------------------------------------|------------------------|-------------------------------------------------------------|
+| Banks can't roll ST debt             | Repo / QE              | Fed assets ↑, bank reserves ↑                               |
+| MBS prices crash                     | Fed buys MBS (QE)      | Bank sells risk → gains cash & stability                    |
+| Interbank market freezes             | Fed adds reserves      | FFR hits floor → lending shifts to private sector           |
+| Fed balance sheet expands            | QE                     | System moves to floor regime                                |
+| Fed balance sheet contracts          | QT                     | Liquidity ↓, rates ↑, risk re-enters banking system         |
+
+---
+
+## 🧪 7. Key Visual Cue for MCQs
+
+- **If Fed buys something** → **assets ↑**, **reserves ↑**, **liquidity ↑**
+- **If reserves ↑ a lot** → **floor system**, Fed must move **IORB** to adjust rates
+- **If bank’s asset disappears** but liability remains → **capital risk**
+- **If liability gone too** → only risk is **liquidity (short-term mismatch)**
+- **If deposit limits are imposed** → bank relies on **hot money** → contagion risk ↑
+
+---
+
+## ✅ Final Tips
+
+- Ask: **What’s the Fed buying/selling?** → Which balance sheet line changes?
+- Look at **reserves** to judge if in corridor or floor
+- Connect **asset sales/purchases** to **interest rates** or **risk transfer**
+- Use the signal:  
+  `Fed action → Bank reserve position → Lending → Interest Rate`
+
+
